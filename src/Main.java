@@ -3,11 +3,14 @@ public class Main {
 
         int onebonus = 100;
         int balans = 500;
-        int amout = 1301;
-         int x = amout + balans;
+        int amout = 1401;
+        int finalBalans = amout + balans;
 
-        if (amout > 1000) {x = amout / onebonus + balans + amout;}
-        else {x = amout + balans;}
-        System.out.println(x);
+        if (amout > 1000) {
+            finalBalans = amout / onebonus + balans + amout;
+        } else {
+            finalBalans = amout + balans;
+        }
+        System.out.println(finalBalans);
     }
 }
